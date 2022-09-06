@@ -15,7 +15,6 @@ class produkController extends Controller {
     }
     function store(){
 
-        
         $produk = new produk();
         $produk->id_user = request()->user()->id;
         $produk->nama = request('nama');
